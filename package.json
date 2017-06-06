@@ -1,0 +1,17 @@
+{
+  "name": "winterfell_facts_alexa",
+  "version": "1.0.0",
+  "description": "facts about the lovely winterfell",
+  "main": "index.js",,
+  "keywords": [
+    "alexa",
+    "skills",
+    "game of thrones",
+    "winterfell"
+  ]
+  "author": "brandon-criss",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.9"
+  }
+}
