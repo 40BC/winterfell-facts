@@ -5,8 +5,9 @@ var APP_ID = "amzn1.ask.skill.6567cb4c-3228-417d-bafc-424678fda76b";
 var SKILL_NAME = "Winterfell Facts";
 var GET_FACT_MESSAGE = "Here's your fact about Winterfell: ";
 var HELP_MESSAGE = "You can say tell me a fact, or, you can say tell me a winterfell fact, you can say exit... Winterfell is coming.";
-var HELP_REPROMPT = "Winter is Coming...what can I help you with?";
-var STOP_MESSAGE = "Goodbye!";
+var HELP_REPROMPT = "As the Winterfell Maester, what can I help you with?";
+var STOP_MESSAGE = "Winter is Coming...";
+var CANCEL_MESSAGE = "Well I thought you wanted to hear a fact. Anyways, Winter is coming..."
 var data = [
     "Winterfell is the ancient seat of house stark.",
     "Winter fell was built over eight thousand years ago by Brandon the builder.",
@@ -50,7 +51,7 @@ var handlers = {
         this.emit(':ask', speechOutput, reprompt);
     },
     'AMAZON.CancelIntent': function () {
-        this.emit(':tell', STOP_MESSAGE);
+        this.emit(':tell', CANCEL_MESSAGE);
     },
     'AMAZON.StopIntent': function () {
         this.emit(':tell', STOP_MESSAGE);
