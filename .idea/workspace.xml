@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a6d42a8-3a95-4c8c-bde5-458cd0bcbd11" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+>>>>>>> 56f0bc84131954739c93632103b845d8b4293fe7
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,6 +27,10 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="112">
+              <caret line="7" column="117" lean-forward="false" selection-start-line="7" selection-start-column="117" selection-end-line="7" selection-end-column="117" />
+=======
             <state relative-caret-position="481">
               <caret line="45" column="73" lean-forward="false" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
               <folding />
@@ -35,6 +43,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="52">
               <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+>>>>>>> 56f0bc84131954739c93632103b845d8b4293fe7
               <folding />
             </state>
           </provider>
@@ -202,14 +211,30 @@
       <updated>1496781548258</updated>
       <workItem from="1496781551449" duration="499000" />
       <workItem from="1496851417716" duration="1962000" />
+<<<<<<< HEAD
+      <workItem from="1496856687245" duration="1129000" />
+      <workItem from="1496937542579" duration="1370000" />
+=======
       <workItem from="1496856687245" duration="1060000" />
       <workItem from="1496867961485" duration="122000" />
+<<<<<<< HEAD
       <workItem from="1496874874921" duration="373000" />
+=======
+      <workItem from="1496874874921" duration="256000" />
+>>>>>>> 56f0bc84131954739c93632103b845d8b4293fe7
+>>>>>>> 89d7551dfdcbe1bd88320894ceeeb26a9989c675
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="4016000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="4960000" />
+=======
+    <option name="totallyTimeSpent" value="3899000" />
+>>>>>>> 89d7551dfdcbe1bd88320894ceeeb26a9989c675
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -219,6 +244,7 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+>>>>>>> 56f0bc84131954739c93632103b845d8b4293fe7
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -263,16 +289,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
         <state relative-caret-position="52">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+>>>>>>> 56f0bc84131954739c93632103b845d8b4293fe7
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="432">
+          <caret line="27" column="96" lean-forward="false" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
+=======
         <state relative-caret-position="525">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+>>>>>>> 56f0bc84131954739c93632103b845d8b4293fe7
           <folding />
         </state>
       </provider>
@@ -310,16 +346,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+=======
         <state relative-caret-position="52">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
+>>>>>>> 56f0bc84131954739c93632103b845d8b4293fe7
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="112">
+          <caret line="7" column="117" lean-forward="false" selection-start-line="7" selection-start-column="117" selection-end-line="7" selection-end-column="117" />
+=======
         <state relative-caret-position="481">
           <caret line="45" column="73" lean-forward="false" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
+>>>>>>> 56f0bc84131954739c93632103b845d8b4293fe7
           <folding />
         </state>
       </provider>
