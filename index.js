@@ -8,7 +8,7 @@ var GET_FACT_MESSAGE = "Here's your fact about Winterfell: ";
 var HELP_MESSAGE = "You can say tell me a fact, or, you can say tell me a winterfell fact, you can say exit... Winter is coming.";
 var HELP_REPROMPT = "As the Winterfell Maester, what can I help you with?";
 var STOP_MESSAGE = "Winter is Coming...";
-var CANCEL_MESSAGE = "Well I thought you wanted to hear a fact. Anyways, Winter is coming..."
+var CANCEL_MESSAGE = "Well I thought you wanted to hear a fact. Anyways, Winter is coming...";
 var data = [
     "Winterfell is the ancient seat of house stark.",
     "Winter fell was built over eight thousand years ago by Brandon the builder.",
@@ -44,7 +44,7 @@ var handlers = {
         var factIndex = Math.floor(Math.random() * factArr.length);
         var randomFact = factArr[factIndex];
         var speechOutput = GET_FACT_MESSAGE + randomFact;
-        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact)
+        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact);
     },
     'AMAZON.HelpIntent': function () {
         var speechOutput = HELP_MESSAGE;
