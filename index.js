@@ -4,6 +4,7 @@ var Alexa = require('alexa-sdk');
 var APP_ID = "amzn1.ask.skill.6567cb4c-3228-417d-bafc-424678fda76b";
 var SKILL_NAME = "Winterfell Facts";
 var WELCOME_MESSAGE = "Welcome to Winterfell Facts, I am the maester here at Winterfell, how can I help you before winter gets here?";
+var WELCOME_REPROMPT = "Would you like to hear a fact? You can say tell me a Winterfell fact, or you can say tell me a fact. You can also say help, or exit. But you better hurry before Witner comes.";
 var GET_FACT_MESSAGE = "Here's your fact about Winterfell: ";
 var HELP_MESSAGE = "You can say tell me a fact, or, you can say tell me a winterfell fact, you can say exit... Winter is coming.";
 var HELP_REPROMPT = "As the Winterfell Maester, what can I help you with?";
@@ -37,7 +38,11 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit(':ask', WELCOME_MESSAGE);
+        this.attributes['speechOutput'] = this.t(WELCOME_MESSAGE);
+        // If the user either does not reply to the welcome message or says something that is not
+        // understood, they will be prompted again with this text.
+        this.attributes['repromptSpeech'] = this.t(WELCOME_REPROMPT);
+        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
     },
     'GetNewFactIntent': function () {
         var factArr = data;
