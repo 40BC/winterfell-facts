@@ -3,13 +3,13 @@ var Alexa = require('alexa-sdk');
 
 var APP_ID = "amzn1.ask.skill.6567cb4c-3228-417d-bafc-424678fda76b";
 var SKILL_NAME = "Winterfell Facts";
-var WELCOME_MESSAGE = "Welcome to Winterfell Facts, I am the maester here at Winterfell, how can I help you before winter gets here?";
-var WELCOME_REPROMPT = "Would you like to hear a fact? You can say tell me a Winterfell fact, or you can say tell me a fact. You can also say help, or exit. But you better hurry before Witner comes.";
+var WELCOME_MESSAGE = "Welcome to Winterfell Facts, I am the maester here at Winterfell, how can I help you now that Winter is here?";
+var REPROMPT_MESSAGE = "Would you like to hear a fact? You can say tell me a Winterfell fact or tell me a fact."
 var GET_FACT_MESSAGE = "Here's your fact about Winterfell: ";
-var HELP_MESSAGE = "You can say tell me a fact, or, you can say tell me a winterfell fact, you can say exit... Winter is coming.";
+var HELP_MESSAGE = "You can say tell me a fact, or, you can say tell me a winterfell fact, you can say exit... Winter is here.";
 var HELP_REPROMPT = "As the Winterfell Maester, what can I help you with?";
-var STOP_MESSAGE = "Winter is Coming...";
-var CANCEL_MESSAGE = "Well I thought you wanted to hear a fact. Anyways, Winter is coming...";
+var STOP_MESSAGE = "Winter is here...";
+var CANCEL_MESSAGE = "Well I thought you wanted to hear a fact. Anyways, Winter is here...";
 var data = [
     "Winterfell is the ancient seat of house stark.",
     "Winter fell was built over eight thousand years ago by Brandon the builder.",
@@ -38,11 +38,7 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.attributes['speechOutput'] = this.t(WELCOME_MESSAGE);
-        // If the user either does not reply to the welcome message or says something that is not
-        // understood, they will be prompted again with this text.
-        this.attributes['repromptSpeech'] = this.t(WELCOME_REPROMPT);
-        this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
+        this.emit(':ask', WELCOME_MESSAGE, REPROMPT_MESSAGE);
     },
     'GetNewFactIntent': function () {
         var factArr = data;
