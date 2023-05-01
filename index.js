@@ -1,7 +1,7 @@
 'use strict';
 var Alexa = require('alexa-sdk');
 
-var APP_ID = "amzn1.ask.skill.6567cb4c-3228-417d-bafc-424678fda76b";
+var APP_ID = "";
 var SKILL_NAME = "Winterfell Facts";
 var WELCOME_MESSAGE = "Welcome to Winterfell Facts, I am the maester here at Winterfell, how can I help you now that Winter is here?";
 var REPROMPT_MESSAGE = "Would you like to hear a fact? You can say tell me a Winterfell fact or tell me a fact."
